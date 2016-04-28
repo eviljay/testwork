@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/myStyle.css"/>
+    <script   src="https://code.jquery.com/jquery-1.12.3.js"  ></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="js/app.js"></script>
+
+</head>
+<body ng-app="app">
+<div class="container "  >
+    <div class="row" ng-controller="menuList">
+        <div class="col-sm-3" ng-repeat="food in foods | limitTo:12" >
+            <div class="product"  >
+
+            <div class="photo"><a href="{{food.link}}"><img ng-src={{food.photo}}></a></div>
+        <div class="heading">{{food.heading}}</div>
+        <div class="description">{{food.description}}</div>
+            <div class="price">{{food.price}} р.</div>
+        </div></div>
+
+
+</div></div>
+
+</body>
+</html>

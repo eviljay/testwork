@@ -1,0 +1,22 @@
+$background-color:#fafafa;
+body{
+  background: $background-color;
+}
+.photo img{    width: 100%;
+  border: 13px solid #fff;}
+.price{
+  font-weight: bold;
+}
+.heading,.price,.description{text-align: center;}
+.heading{  height: 40px;
+  width: 210px;font-weight: bold;
+  margin: 12px auto 12px auto;
+  font-family: Helvetica;
+  font-size: 15px;}
+
+.description{  width: 220px;
+  margin: 12px auto 12px auto;}
+
+.product{
+  height: 490px;
+}
